@@ -42,6 +42,7 @@ standard:
 	install -m 755 src/tpfancod.py $(DESTDIR)/usr/sbin/tpfancod
 	install -d $(DESTDIR)/etc/modprobe.d
 	install -m 644 etc/modprobe.d/tpfancod.conf $(DESTDIR)/etc/modprobe.d/
+	install -m 644 etc/tpfancod/settings.conf $(DESTDIR)/etc/tpfancod/
 
 install-sysvinit: all standard sysvinit
 
